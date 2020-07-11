@@ -1,4 +1,3 @@
-
 import numpy as np
 import matplotlib.pyplot as  plt
 from math import log
@@ -11,7 +10,7 @@ class LogisticRegressionClassifier:
         self._theta = None
         self._inception = None
         self._coef = None
-        self.c =c
+        self.c = c
         self.eta = eta
     ## 概率转换函数
     def sigmiod(self,z):

@@ -164,7 +164,7 @@ class GBoostingTreeClassifier:
         oneHot = OneHotEncoder()
         y = oneHot.fit_transform(y.reshape(-1,1)).toarray()
         # print(loss_fm(X,y))
-        ## 添加第轮个树模型，方便计算
+        ## 添加第一轮个树模型，方便计算
         # trees_1 = []
         # grad1 = grad_fm(X,y)
         # for i in range(self.class_k): ## 每个类别的分类器，弄清楚要拟合的是什么，某个类的真实概率和预测概率的差值,fit(X,（deltaP）)
